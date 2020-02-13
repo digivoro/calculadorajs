@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0013c2e76c.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- JS -->
+    <script src="/assets/js/script.js"></script>
+  </head>
+  <body>
+    <div class="calculadora">
+      <div>
+        <input id="visor" class="visor" type="text" />
+      </div>
+      <div class="botonera">
+        <div class="numeros">
+          <button onclick="agregarCaracter(7)" class="numero">7</button>
+          <button onclick="agregarCaracter(8)" class="numero">8</button>
+          <button onclick="agregarCaracter(9)" class="numero">9</button>
+          <button onclick="agregarCaracter(4)" class="numero">4</button>
+          <button onclick="agregarCaracter(5)" class="numero">5</button>
+          <button onclick="agregarCaracter(6)" class="numero">6</button>
+          <button onclick="agregarCaracter(1)" class="numero">1</button>
+          <button onclick="agregarCaracter(2)" class="numero">2</button>
+          <button onclick="agregarCaracter(3)" class="numero">3</button>
+          <button onclick="agregarCaracter(0)" class="numero">0</button>
+          <button onclick="borrarVisor()"><i class="fab fa-cuttlefish"></i></button>
+          <button onclick="calcular()"><i class="fas fa-equals"></i></button>
+        </div>
+        <div class="operaciones">
+          <button onclick="fijarOperacion('multiplicacion')" class="operacion"><i class="fas fa-times"></i></button>
+          <button onclick="fijarOperacion('division')" class="operacion"><i class="fas fa-divide"></i></button>
+          <button onclick="fijarOperacion('resta')" class="operacion"><i class="fas fa-minus"></i></button>
+          <button onclick="fijarOperacion('suma')" class="operacion"><i class="fas fa-plus"></i></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
